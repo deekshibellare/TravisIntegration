@@ -1,7 +1,4 @@
 language: swift
 osx_image: xcode9.3
-script: - xcodebuild \
--project "TestingTravis.xcodeproj" \
--scheme "TestingTravis" \
--sdk $SIMULATOR \
-OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies"
+xcode_scheme: "TestingTravis"
+xcode_project: "TestingTravis.xcodeproj"
