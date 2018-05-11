@@ -1,4 +1,7 @@
 language: swift
 osx_image: xcode9.3
-xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
-xcode_scheme: MyNewProjectTest
+script: - xcodebuild \
+-project "TestingTravis.xcodeproj" \
+-scheme "TestingTravis" \
+-sdk $SIMULATOR \
+OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies"
