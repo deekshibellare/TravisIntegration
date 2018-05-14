@@ -9,4 +9,5 @@ xcodebuild \
 -project "TestingTravis.xcodeproj" \
 -scheme "TestingTravis" \
 -sdk $SIMULATOR \
-OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies"
+-destination "platform=iOS Simulator,name=iPhone X,OS=11.3" \
+test
