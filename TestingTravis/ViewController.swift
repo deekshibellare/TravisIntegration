@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
+import SwiftMessages
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        SwiftMessages.sharedInstance.show(view: UIView())
         // Do any additional setup after loading the view, typically from a nib.
     }
 
